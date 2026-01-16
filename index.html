@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="app">
+
+    <h1>Task Manager</h1>
+
+    <!-- 🔹 CREATE MAIN TASK -->
+    <section class="task-input">
+
+        <input 
+            type="text" 
+            id="taskTitleInput" 
+            placeholder="Task title"
+        >
+
+        <input 
+            type="date" 
+            id="taskDeadlineInput"
+        >
+
+        <button id="addTaskBtn">Add Task</button>
+    </section>
+
+    <!-- 🔹 SAVE / LOAD -->
+    <section class="actions">
+        <button id="saveBtn">Save Tasks</button>
+        <button id="loadBtn">Load Tasks</button>
+    </section>
+
+    <!-- 🔹 TASK LIST -->
+    <section id="taskContainer" class="task-list">
+        <!-- JS renders tasks here -->
+    </section>
+
+</main>
+
+<script src="App.js"></script>
+</body>
+</html>
+
+
